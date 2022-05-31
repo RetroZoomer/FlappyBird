@@ -52,7 +52,7 @@ public class Game extends Canvas implements Runnable {
 
         while(running){
             long now = System.nanoTime();
-            delta += (now * pastTime) / ns;
+            delta += (now - pastTime) / ns;
             pastTime = now;
 
             while (delta > 0) {
@@ -62,7 +62,7 @@ public class Game extends Canvas implements Runnable {
                 render();
                 frames++;
 
-                delta++;
+                delta--;
             }
             if (System.currentTimeMillis() - timer > 1000){
                 timer+= 1000;
