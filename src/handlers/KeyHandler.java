@@ -16,6 +16,10 @@ public class KeyHandler implements KeyListener {
         if (e.getKeyCode() == KeyEvent.VK_SPACE){
             Game.bird.setVelY(-7);
         }
+
+        if (e.getKeyCode() == KeyEvent.VK_E){
+            PipeHandler.spawnPipe();
+        }
     }
 
     @Override

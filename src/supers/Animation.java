@@ -54,7 +54,7 @@ public class Animation {
         if (target == null) {
             g.drawImage(images[currentImage], x, y, null);
         } else {
-            g.drawImage(images[currentImage], x + target.x, y + target.y, null);
+            g.drawImage(images[currentImage], target.x, target.y, null);
         }
 
     }
