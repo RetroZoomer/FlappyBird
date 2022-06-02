@@ -1,6 +1,10 @@
 package com.FlappyBird;
 
+import gameObjects.Bird;
+import handlers.ObjectHandler;
+
 import java.awt.*;
+import java.awt.image.BufferStrategy;
 import java.net.ServerSocket;
 
 public class Game extends Canvas implements Runnable {
@@ -10,11 +14,13 @@ public class Game extends Canvas implements Runnable {
 
     public boolean running;
 
+    public static Bird bird;
+
     Thread thread;
     ServerSocket serverSocket;
 
     public static void main(String[] args) {
-	    new Window(WIDTH, HEIGHT, "FlappyBird", new Game());
+        new Window(WIDTH, HEIGHT, "FlappyBird", new Game());
     }
 
     public synchronized void start(){
@@ -26,15 +32,30 @@ public class Game extends Canvas implements Runnable {
     }
 
     public void init(){
-
+        bird = new Bird(50, 50, 32,24 );
     }
 
     public void tick(){
-
+        ObjectHandler.tick();
     }
 
     public void render(){
+        BufferStrategy bs = this.getBufferStrategy();
 
+        if(bs == null){
+            createBufferStrategy(3);
+            return;
+        }
+
+        Graphics g = bs.getDrawGraphics();
+
+        g.setColor(Color.WHITE);
+        g.fillRect(0,0,WIDTH, HEIGHT);
+
+        ObjectHandler.render(g);
+
+        g.dispose();
+        bs.show();
     }
 
     @Override
