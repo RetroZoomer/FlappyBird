@@ -2,9 +2,11 @@ package com.FlappyBird;
 
 import gameObjects.Bird;
 import handlers.ObjectHandler;
+import loaders.GraphicsLoader;
 
 import java.awt.*;
 import java.awt.image.BufferStrategy;
+import java.awt.image.BufferedImage;
 import java.net.ServerSocket;
 
 public class Game extends Canvas implements Runnable {
@@ -15,6 +17,7 @@ public class Game extends Canvas implements Runnable {
     public boolean running;
 
     public static Bird bird;
+    public static BufferedImage background;
 
     Thread thread;
     ServerSocket serverSocket;
@@ -32,7 +35,9 @@ public class Game extends Canvas implements Runnable {
     }
 
     public void init(){
-        bird = new Bird(50, 50, 32,24 );
+        background = GraphicsLoader.loadGraphics("background-day.png");
+
+        bird = new Bird(30, 30, 32,24 );
     }
 
     public void tick(){
@@ -49,8 +54,7 @@ public class Game extends Canvas implements Runnable {
 
         Graphics g = bs.getDrawGraphics();
 
-        g.setColor(Color.WHITE);
-        g.fillRect(0,0,WIDTH, HEIGHT);
+        g.drawImage(background, 0, 0, null);
 
         ObjectHandler.render(g);
 
