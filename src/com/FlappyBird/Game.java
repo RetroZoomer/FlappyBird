@@ -1,6 +1,7 @@
 package com.FlappyBird;
 
 import gameObjects.Bird;
+import handlers.KeyHandler;
 import handlers.ObjectHandler;
 import loaders.GraphicsLoader;
 
@@ -17,6 +18,7 @@ public class Game extends Canvas implements Runnable {
     public boolean running;
 
     public static Bird bird;
+
     public static BufferedImage background;
 
     Thread thread;
@@ -35,6 +37,8 @@ public class Game extends Canvas implements Runnable {
     }
 
     public void init(){
+        addKeyListener(new KeyHandler());
+
         background = GraphicsLoader.loadGraphics("background-day.png");
 
         bird = new Bird(30, 30, 32,24 );
