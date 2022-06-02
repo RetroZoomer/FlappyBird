@@ -1,5 +1,6 @@
 package gameObjects;
 
+import com.FlappyBird.Game;
 import handlers.ObjectHandler;
 import loaders.GraphicsLoader;
 import supers.Animation;
@@ -41,6 +42,14 @@ public class Bird extends GameObject {
 
         if (velY > maxSpeed) {
             velY = maxSpeed;
+        }
+
+        if(y + height > Game.HEIGHT - 112 - 25) {
+            y = Game.HEIGHT - 112 - 25 - height;
+        }
+
+        if (y < -20) {
+            y = -20;
         }
 
         animation.tick();

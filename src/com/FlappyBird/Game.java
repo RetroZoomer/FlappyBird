@@ -1,6 +1,7 @@
 package com.FlappyBird;
 
 import gameObjects.Bird;
+import gameObjects.Ground;
 import handlers.KeyHandler;
 import handlers.ObjectHandler;
 import loaders.GraphicsLoader;
@@ -17,9 +18,10 @@ public class Game extends Canvas implements Runnable {
 
     public boolean running;
 
-    public static Bird bird;
-
     public static BufferedImage background;
+    public static Ground ground;
+
+    public static Bird bird;
 
     Thread thread;
     ServerSocket serverSocket;
@@ -40,12 +42,13 @@ public class Game extends Canvas implements Runnable {
         addKeyListener(new KeyHandler());
 
         background = GraphicsLoader.loadGraphics("background-day.png");
-
+        ground = new Ground();
         bird = new Bird(30, 30, 32,24 );
     }
 
     public void tick(){
         ObjectHandler.tick();
+        ground.tick();
     }
 
     public void render(){
@@ -59,6 +62,7 @@ public class Game extends Canvas implements Runnable {
         Graphics g = bs.getDrawGraphics();
 
         g.drawImage(background, 0, 0, null);
+        ground.render(g);
 
         ObjectHandler.render(g);
 
