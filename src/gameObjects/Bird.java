@@ -12,8 +12,14 @@ public class Bird extends GameObject {
 
     Animation animation;
 
+    public float gravity;
+    public float maxSpeed;
+
     public Bird(int x, int y, int width, int height){
         super(x, y, width, height);
+
+        gravity = 0.3f;
+        maxSpeed = 12f;
 
         BufferedImage[] images = new BufferedImage[3];
 
@@ -29,6 +35,14 @@ public class Bird extends GameObject {
 
     @Override
     public void tick() {
+
+        velY += gravity;
+        y += velY;
+
+        if (velY > maxSpeed) {
+            velY = maxSpeed;
+        }
+
         animation.tick();
     }
 
