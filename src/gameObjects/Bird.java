@@ -44,12 +44,12 @@ public class Bird extends GameObject {
             velY = maxSpeed;
         }
 
-        if(y + height > Game.HEIGHT - 112 - 25) {
-            y = Game.HEIGHT - 112 - 25 - height;
+        if(y + height > Game.HEIGHT - 112) {
+            y = Game.HEIGHT - 112 - height;
         }
 
-        if (y < -20) {
-            y = -20;
+        if (y < 0) {
+            y = 0;
         }
 
         animation.tick();
