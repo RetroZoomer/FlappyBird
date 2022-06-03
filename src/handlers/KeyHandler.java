@@ -13,12 +13,8 @@ public class KeyHandler implements KeyListener {
 
     @Override
     public void keyPressed(KeyEvent e) {
-        if (e.getKeyCode() == KeyEvent.VK_SPACE){
-            Game.bird.setVelY(-7);
-        }
-
-        if (e.getKeyCode() == KeyEvent.VK_E){
-            PipeHandler.spawnPipe();
+        if (e.getKeyCode() == KeyEvent.VK_SPACE) {
+            Game.bird.setVelY(-5);
         }
     }
 

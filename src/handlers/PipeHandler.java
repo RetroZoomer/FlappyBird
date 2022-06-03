@@ -15,6 +15,8 @@ public class PipeHandler {
     public static int spacing = 120;
     public static int minSize = 20;
     public static int maxSize = area + spacing + minSize - 300;
+    public static int delay = 1;
+    public static int now;
 
     public static void spawnPipe() {
         int heightTop = random.nextInt(maxSize) + 1;
@@ -32,5 +34,12 @@ public class PipeHandler {
         ObjectHandler.addObject(pipeBottom);
     }
 
-
+    public static void tick() {
+        if (now < delay) {
+            now++;
+        } else {
+            spawnPipe();
+            now = 0;
+        }
+    }
 }

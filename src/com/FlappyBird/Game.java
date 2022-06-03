@@ -4,6 +4,7 @@ import gameObjects.Bird;
 import gameObjects.Ground;
 import handlers.KeyHandler;
 import handlers.ObjectHandler;
+import handlers.PipeHandler;
 import loaders.GraphicsLoader;
 
 import java.awt.*;
@@ -17,6 +18,7 @@ public class Game extends Canvas implements Runnable {
     public static final int HEIGHT = 512;
 
     public boolean running;
+    public static boolean paused;
 
     public static BufferedImage background;
     public static Ground ground;
@@ -47,8 +49,10 @@ public class Game extends Canvas implements Runnable {
     }
 
     public void tick(){
-        ObjectHandler.tick();
-        ground.tick();
+        if (!paused) {
+            ObjectHandler.tick();
+            ground.tick();
+        }
     }
 
     public void render(){
@@ -100,6 +104,7 @@ public class Game extends Canvas implements Runnable {
             if (System.currentTimeMillis() - timer > 1000){
                 timer+= 1000;
                 System.out.println("FPS: " + frames + " | TICKS: " + updates);
+                PipeHandler.tick();
                 updates = 0;
                 frames = 0;
             }
