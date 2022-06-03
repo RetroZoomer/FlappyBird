@@ -3,9 +3,11 @@ package com.FlappyBird;
 import gameObjects.Bird;
 import gameObjects.Ground;
 import handlers.KeyHandler;
+import handlers.MouseHandler;
 import handlers.ObjectHandler;
 import handlers.PipeHandler;
 import loaders.GraphicsLoader;
+import supers.Button_;
 
 import java.awt.*;
 import java.awt.image.BufferStrategy;
@@ -18,12 +20,15 @@ public class Game extends Canvas implements Runnable {
     public static final int HEIGHT = 512;
 
     public boolean running;
-    public static boolean paused;
+    public static boolean gameover;
 
+    public static BufferedImage img_gameover;
     public static BufferedImage background;
     public static Ground ground;
-
     public static Bird bird;
+
+    public static Button_ button;
+
 
     Thread thread;
     ServerSocket serverSocket;
@@ -42,14 +47,18 @@ public class Game extends Canvas implements Runnable {
 
     public void init(){
         addKeyListener(new KeyHandler());
+        addMouseListener(new MouseHandler());
 
+        img_gameover = GraphicsLoader.loadGraphics("gameover.png");
         background = GraphicsLoader.loadGraphics("background-day.png");
         ground = new Ground();
         bird = new Bird(30, 30, 32,24 );
+
+        button = new Button_(Game.WIDTH / 2 - 80, 130, 156, 87, GraphicsLoader.loadGraphics("Button.png"));
     }
 
     public void tick(){
-        if (!paused) {
+        if (!gameover) {
             ObjectHandler.tick();
             ground.tick();
         }
@@ -69,6 +78,11 @@ public class Game extends Canvas implements Runnable {
         ground.render(g);
 
         ObjectHandler.render(g);
+
+        if (gameover){
+            g.drawImage(img_gameover, 50, 50, null);
+            Game.button.render(g);
+        }
 
         g.dispose();
         bs.show();
