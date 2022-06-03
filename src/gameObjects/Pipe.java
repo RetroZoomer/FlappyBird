@@ -38,10 +38,10 @@ public class Pipe extends GameObject {
     public void render(Graphics g) {
         if (type == PipeType.BOTTOM) {
             g.drawImage(pipe, x, y, 50, height, null);
-            g.drawImage(pipeBlock, x, y, null);
+            g.drawImage(pipeBlock, x-1, y, null);
         } else if (type == PipeType.TOP){
             g.drawImage(pipe, x, y, 50, height, null);
-            g.drawImage(pipeBlock, x, y + height, null);
+            g.drawImage(pipeBlock, x-1, y + height, null);
         }
     }
 }
