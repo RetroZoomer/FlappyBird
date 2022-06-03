@@ -1,5 +1,7 @@
 package supers;
 
+import com.FlappyBird.Game;
+
 import java.awt.*;
 import java.awt.image.BufferedImage;
 

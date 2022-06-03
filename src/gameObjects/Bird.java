@@ -44,7 +44,7 @@ public class Bird extends GameObject {
             velY = maxSpeed;
         }
 
-        if(y + height > Game.HEIGHT - 112) {
+        if(y + height > Game.HEIGHT - 115) {
             y = Game.HEIGHT - 112 - height;
         }
 

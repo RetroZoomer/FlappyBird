@@ -21,13 +21,17 @@ public class Game extends Canvas implements Runnable {
 
     public boolean running;
     public static boolean gameover;
+    public static boolean startScreen;
 
+    public static BufferedImage img_startScreen;
     public static BufferedImage img_gameover;
     public static BufferedImage background;
     public static Ground ground;
     public static Bird bird;
-
     public static Button_ button;
+
+    public static int score;
+
 
 
     Thread thread;
@@ -42,6 +46,7 @@ public class Game extends Canvas implements Runnable {
         thread = new Thread();
         thread.start();
         run();
+        gameover = true;
 
     }
 
@@ -49,12 +54,13 @@ public class Game extends Canvas implements Runnable {
         addKeyListener(new KeyHandler());
         addMouseListener(new MouseHandler());
 
+        img_startScreen = GraphicsLoader.loadGraphics("message.png");
         img_gameover = GraphicsLoader.loadGraphics("gameover.png");
         background = GraphicsLoader.loadGraphics("background-day.png");
         ground = new Ground();
         bird = new Bird(30, 30, 32,24 );
 
-        button = new Button_(Game.WIDTH / 2 - 80, 130, 156, 87, GraphicsLoader.loadGraphics("Button.png"));
+        button = new Button_(Game.WIDTH / 2 - 80, 180, 156, 87, GraphicsLoader.loadGraphics("Button.png"));
     }
 
     public void tick(){
@@ -79,10 +85,21 @@ public class Game extends Canvas implements Runnable {
 
         ObjectHandler.render(g);
 
-        if (gameover){
-            g.drawImage(img_gameover, 50, 50, null);
+        if (startScreen) {
+            g.drawImage(img_startScreen, 50, 130, null);
+        }
+
+        if (gameover) {
+            g.drawImage(img_gameover, 50, 130, null);
             Game.button.render(g);
         }
+
+        g.setFont(new Font("Arial", Font.BOLD, 48));
+        g.setColor(Color.WHITE);
+
+        String s = Integer.toString(score);
+
+        g.drawString(s, Game.WIDTH / 2 - 20, 50);
 
         g.dispose();
         bs.show();
