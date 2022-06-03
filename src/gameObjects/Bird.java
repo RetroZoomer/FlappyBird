@@ -54,14 +54,17 @@ public class Bird extends GameObject {
 
         GameObject temp = null;
 
-        for (int i = 0; i < ObjectHandler.list.size(); i++){
+        for (int i = 0; i < ObjectHandler.list.size(); i++) {
             temp = ObjectHandler.list.get(i);
-        }
 
-        if (temp instanceof Pipe){
-            if (this.getBounds().intersects(temp.getBounds())){
-                Game.paused = true;
+
+            if (temp instanceof Pipe) {
+                if (this.getBounds().intersects(temp.getBounds())) {
+                    Game.gameover = true;
+                }
             }
+
+
         }
 
         animation.tick();
