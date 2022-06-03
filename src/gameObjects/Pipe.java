@@ -1,6 +1,8 @@
 package gameObjects;
 
+import com.FlappyBird.Game;
 import enums.PipeType;
+import handlers.ObjectHandler;
 import loaders.GraphicsLoader;
 import supers.GameObject;
 
@@ -32,6 +34,14 @@ public class Pipe extends GameObject {
     @Override
     public void tick() {
         x -= velX;
+
+        if (x + width < 0) {
+            ObjectHandler.removeObject(this);
+
+            if (type == PipeType.TOP) {
+                Game.score += 1;
+            }
+        }
     }
 
     @Override
@@ -41,7 +51,7 @@ public class Pipe extends GameObject {
             g.drawImage(pipeBlock, x-1, y, null);
         } else if (type == PipeType.TOP){
             g.drawImage(pipe, x, y, 50, height, null);
-            g.drawImage(pipeBlock, x-1, y + height, null);
+            g.drawImage(pipeBlock, x-1, y + height - 23, null);
         }
     }
 }

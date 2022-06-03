@@ -1,7 +1,6 @@
 package handlers;
 
 import com.FlappyBird.Game;
-import gameObjects.Bird;
 import supers.Button_;
 
 import java.awt.event.MouseEvent;
@@ -25,9 +24,10 @@ public class MouseHandler implements MouseListener {
                 Game.button.pressed = false;
                 Game.bird.setX(30);
                 Game.bird.setY(30);
-
+                Game.score = 0;
             }
         }
+        Game.bird.setVelY(-5);
 
     }
 
