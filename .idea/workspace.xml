@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="436e3c85-065e-4558-95ee-1bc8bdf4db04" name="Changes" comment="Готово">
+      <change afterPath="$PROJECT_DIR$/rsc/FlappyBird.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rsc/die.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rsc/nice.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rsc/sfx-2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rsc/wing.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/supers/Audio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project-template.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FlappyBird/com/FlappyBird/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FlappyBird/com/FlappyBird/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FlappyBird/gameObjects/Bird.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FlappyBird/gameObjects/Bird.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FlappyBird/gameObjects/Pipe.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FlappyBird/gameObjects/Pipe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FlappyBird/handlers/KeyHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FlappyBird/handlers/KeyHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FlappyBird/handlers/MouseHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FlappyBird/handlers/MouseHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FlappyBird/handlers/PipeHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FlappyBird/handlers/PipeHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FlappyBird/supers/GameObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FlappyBird/supers/GameObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/FlappyBird/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/FlappyBird/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gameObjects/Bird.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameObjects/Bird.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gameObjects/Pipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameObjects/Pipe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/handlers/KeyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/handlers/KeyHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/handlers/MouseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/handlers/MouseHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/handlers/PipeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/handlers/PipeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/supers/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/supers/GameObject.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="pls_work" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2A4VIQ0C4I5fhyVogBRsJvZJNZo" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="handlers" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="Z:\JAVA\FlappyBird\rsc" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Game" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.FlappyBird.Game" />
+      <module name="FlappyBird" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.FlappyBird.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Game" />
+        <item itemvalue="Application.Game" />
+        <item itemvalue="Application.Game" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="436e3c85-065e-4558-95ee-1bc8bdf4db04" name="Changes" comment="" />
+      <created>1654268764895</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1654268764895</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Почему то при переносе на новый комп пропали трубы...&#10;Лишний коммит, ееее">
+      <created>1654270307967</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1654270307967</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Добавлен конец игры">
+      <created>1654277167331</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1654277167331</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Готово">
+      <created>1654283885282</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1654283885282</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="pls_work" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Почему то при переносе на новый комп пропали трубы...&#10;Лишний коммит, ееее" />
+    <MESSAGE value="Добавлен конец игры" />
+    <MESSAGE value="f" />
+    <MESSAGE value="Готово" />
+    <option name="LAST_COMMIT_MESSAGE" value="Готово" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

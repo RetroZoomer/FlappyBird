@@ -15,7 +15,7 @@ public class PipeHandler {
     public static int spacing = 100;
     public static int minSize = 20;
     public static int maxSize = area + spacing + minSize - 300;
-    public static int delay = 1;
+    public static float delay = 0.8f;
     public static int now;
 
     public static void spawnPipe() {

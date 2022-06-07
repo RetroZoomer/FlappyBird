@@ -40,6 +40,8 @@ public class Pipe extends GameObject {
 
             if (type == PipeType.TOP) {
                 Game.score += 1;
+                Game.a_point.sound();
+                Game.a_point.setVolume();
             }
         }
     }

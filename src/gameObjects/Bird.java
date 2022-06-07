@@ -61,6 +61,8 @@ public class Bird extends GameObject {
             if (temp instanceof Pipe) {
                 if (this.getBounds().intersects(temp.getBounds())) {
                     Game.gameover = true;
+                    Game.a_die.sound();
+                    Game.a_die.setVolume();
                 }
             }
 

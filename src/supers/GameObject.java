@@ -70,7 +70,7 @@ public abstract class GameObject {
         return velY;
     }
 
-    public void setVelY(int velY) {
+    public void setVelY(float velY) {
         this.velY = velY;
     }
 }

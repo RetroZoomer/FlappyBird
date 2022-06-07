@@ -6,6 +6,7 @@ import supers.Button_;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
+
 public class MouseHandler implements MouseListener {
     @Override
     public void mouseClicked(MouseEvent e) {
@@ -23,12 +24,17 @@ public class MouseHandler implements MouseListener {
                 Game.gameover = false;
                 Game.button.pressed = false;
                 Game.bird.setX(30);
-                Game.bird.setY(30);
+                Game.bird.setY(150);
                 Game.score = 0;
             }
         }
-        Game.bird.setVelY(-5);
+        if (!Game.gameover) {
+            Game.a_wing.sound();
+            Game.a_wing.setVolume();
+        }
 
+        Game.bird.setVelY(-4.3f);
+        Game.startScreen = false;
     }
 
     @Override
