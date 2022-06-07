@@ -12,7 +12,7 @@ public class PipeHandler {
 
     public static int groundSize = 112;
     public static int area = Game.HEIGHT - groundSize;
-    public static int spacing = 120;
+    public static int spacing = 100;
     public static int minSize = 20;
     public static int maxSize = area + spacing + minSize - 300;
     public static int delay = 1;
@@ -27,8 +27,8 @@ public class PipeHandler {
 
         int heightBottom = area - spacing - heightTop;
 
-        Pipe pipeTOP = new Pipe(500, -5, 78, heightTop, PipeType.TOP);
-        Pipe pipeBottom = new Pipe(500, heightTop + spacing, 78, heightBottom, PipeType.BOTTOM);
+        Pipe pipeTOP = new Pipe(500, 0, 50, heightTop, PipeType.TOP);
+        Pipe pipeBottom = new Pipe(501, heightTop + spacing, 50, heightBottom, PipeType.BOTTOM);
 
         ObjectHandler.addObject(pipeTOP);
         ObjectHandler.addObject(pipeBottom);

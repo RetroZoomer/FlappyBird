@@ -44,7 +44,7 @@ public class Bird extends GameObject {
             velY = maxSpeed;
         }
 
-        if(y + height > Game.HEIGHT - 112) {
+        if(y + height > Game.HEIGHT - 115) {
             y = Game.HEIGHT - 112 - height;
         }
 
@@ -54,14 +54,17 @@ public class Bird extends GameObject {
 
         GameObject temp = null;
 
-        for (int i = 0; i < ObjectHandler.list.size(); i++){
+        for (int i = 0; i < ObjectHandler.list.size(); i++) {
             temp = ObjectHandler.list.get(i);
-        }
 
-        if (temp instanceof Pipe){
-            if (this.getBounds().intersects(temp.getBounds())){
-                Game.paused = true;
+
+            if (temp instanceof Pipe) {
+                if (this.getBounds().intersects(temp.getBounds())) {
+                    Game.gameover = true;
+                }
             }
+
+
         }
 
         animation.tick();
