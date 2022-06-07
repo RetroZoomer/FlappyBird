@@ -1,31 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="436e3c85-065e-4558-95ee-1bc8bdf4db04" name="Changes" comment="Готово">
-      <change afterPath="$PROJECT_DIR$/rsc/FlappyBird.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rsc/die.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rsc/nice.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rsc/sfx-2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rsc/wing.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/supers/Audio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project-template.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FlappyBird/com/FlappyBird/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FlappyBird/com/FlappyBird/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FlappyBird/gameObjects/Bird.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FlappyBird/gameObjects/Bird.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FlappyBird/gameObjects/Pipe.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FlappyBird/gameObjects/Pipe.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FlappyBird/handlers/KeyHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FlappyBird/handlers/KeyHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FlappyBird/handlers/MouseHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FlappyBird/handlers/MouseHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FlappyBird/handlers/PipeHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FlappyBird/handlers/PipeHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FlappyBird/supers/GameObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FlappyBird/supers/GameObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/FlappyBird/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/FlappyBird/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gameObjects/Bird.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameObjects/Bird.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gameObjects/Pipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameObjects/Pipe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/handlers/KeyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/handlers/KeyHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/handlers/MouseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/handlers/MouseHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/handlers/PipeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/handlers/PipeHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/supers/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/supers/GameObject.java" afterDir="false" />
-    </list>
+    <list default="true" id="436e3c85-065e-4558-95ee-1bc8bdf4db04" name="Changes" comment="Готово" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,6 +84,8 @@
         <item itemvalue="Application.Game" />
         <item itemvalue="Application.Game" />
         <item itemvalue="Application.Game" />
+        <item itemvalue="Application.Game" />
+        <item itemvalue="Application.Game" />
       </list>
     </recent_temporary>
   </component>
@@ -155,7 +133,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="pls_work" />
+                        <option value="HEAD" />
                       </list>
                     </value>
                   </entry>
