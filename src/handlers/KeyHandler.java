@@ -16,9 +16,6 @@ public class KeyHandler implements KeyListener {
         if (e.getKeyCode() == KeyEvent.VK_SPACE) {
             Game.bird.setVelY(-6.3f);
         }
-        if (e.getKeyCode() == KeyEvent.VK_E) {
-            PipeHandler.spawnPipe();
-        }
         if (!Game.gameover) {
             Game.a_wing.sound();
             Game.a_wing.setVolume();

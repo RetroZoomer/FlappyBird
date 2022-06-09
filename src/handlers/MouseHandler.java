@@ -33,7 +33,7 @@ public class MouseHandler implements MouseListener {
             Game.a_wing.setVolume();
         }
 
-        Game.bird.setVelY(-4.3f);
+        Game.bird.setVelY(-6.3f);
         Game.startScreen = false;
     }
 
